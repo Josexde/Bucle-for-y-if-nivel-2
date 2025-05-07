@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #resultado {
+      line-height: 1.6;
+    }
+    .imagen-final {
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      let nombre = prompt("¿Tu nombre?");
+      let edad = parseInt(prompt("¿Tu edad?"));
+      let r = document.getElementById("resultado");
+
+      for (let i = 0; i <= edad; i++) {
+        r.innerHTML += `Yo me llamo <strong>${nombre}</strong> y tengo <strong>${i}</strong> años<br>`;
+      }
+
+      
+      r.innerHTML += `<div class="imagen-final">
+        <img src="https://palomaynacho.com/wp-content/uploads/2023/11/Filtran-primera-prueba-shrek-jpg.webp" width="300">
+      </div>`;
+    };
+  </script>
+</head>
+<body>
+  <div id="resultado"></div>
+</body>
+
+
+</head> 
+</html>
